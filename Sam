@@ -1,0 +1,58 @@
+Unified View — CI/CD in Agile: Why, What, and How
+
+🤔 Is CI/CD a Part of Agile? Or Does DevOps Follow Agile?
+
+•	Agile defines what we deliver and how often — DevOps enables how we deliver it
+
+•	CI/CD is a DevOps implementation that makes Agile practical
+
+•	Think of Agile as the strategy, and CI/CD as the execution engine
+
+🎯 CI/CD Objectives:
+
+•	Deliver faster with quality
+
+•	Automate build, test, release
+
+•	Enable continuous feedback and collaboration
+
+🛠️ Tools Used:
+
+•	Source: GitHub / GitLab
+
+•	CI: Jenkins, GitHub Actions
+
+•	Quality: SonarQube, TruffleHog
+
+•	Security: BlackDuck
+
+•	Deployment: ArgoCD + Helm + Kubernetes
+
+⚙️ Implementation Overview:
+
+•	Automated pipeline with integrated quality/security checks
+
+•	Separate stage to pull env configs and tag with app release
+
+•	Multi-source ArgoCD per environment for GitOps deployments
+
+•	Manual approval for prod deployment
+
+✅ Achievements:
+
+•	Zero-touch deployment to QA after commit
+
+•	Early detection of code quality and security issues
+
+•	Configuration and chart versioning streamlined via CI
+
+⚠️ Drawbacks & Scope for Improvement:
+
+•	Initial complexity in multi-repo orchestration
+
+•	Limited test automation coverage in early phases
+
+•	Opportunity to adopt dynamic environments for PR validation
+
+•	Scope to centralize ArgoCD management via App-of-Apps
+
