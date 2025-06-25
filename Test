@@ -1,0 +1,74 @@
+Slide 3: CI/CD in Agile – Foundation, Practice, and Reality
+
+🔁 DevOps & Agile – Which Comes First?
+
+•	Agile defines the mindset and workflow: iterative, feedback-driven, customer-focused
+
+•	DevOps puts that mindset into action: automation, integration, rapid delivery
+
+•	CI/CD is the operational bridge — DevOps practices enabling Agile promises
+
+Takeaway: Agile sets the goals, DevOps executes them, and CI/CD is the delivery engine
+
+🎯 CI/CD Objectives in Agile Context:
+
+•	Deliver value quickly and safely through automation
+
+•	Minimize manual errors and deployment delays
+
+•	Integrate security and quality as early as possible (shift left)
+
+•	Ensure traceability and reproducibility for every change
+
+•	Enable continuous feedback loops across Dev, QA, and Ops
+
+ 
+
+🛠️ Tools Used Across the Pipeline:
+
+•	Source Control: GitHub / GitLab
+
+•	CI Engine: Jenkins, GitHub Actions
+
+•	Quality Gate: SonarQube
+
+•	Security: BlackDuck, TruffleHog
+
+•	Build Tools: Maven, npm (as applicable)
+
+•	Deployment: Helm, ArgoCD, Kubernetes
+
+•	Artifact Storage: Nexus, S3, or Git tags
+
+ 
+
+⚙️ Implementation Strategy in Our Project:
+
+•	CI pipeline with standard stages (checkout, build, test, scan)
+
+•	Dedicated CI stages for:
+
+o	Fetching environment-specific configs from separate Git repo
+
+o	Tagging configs per release and aligning with chart version
+
+•	ArgoCD (multi-source mode) fetches:
+
+o	App chart from app repo
+
+o	YAML values from config repo per environment
+
+•	Controlled rollout with optional manual gate for prod
+
+ 
+
+✅ Achievements
+
+•	Achieved zero-touch deployment to QA environments
+
+•	Simplified tagging and version alignment for config and chart
+
+•	Accelerated feedback on code quality and vulnerabilities
+
+•	Increased reliability and reduced failure rate in deployment
+
